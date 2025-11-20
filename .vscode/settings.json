@@ -1,0 +1,10 @@
+{
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+"css.lint.unknownAtRules": "ignore",
+"markdown.validate.enabled": false
+}
