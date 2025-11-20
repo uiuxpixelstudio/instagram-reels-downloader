@@ -24,7 +24,7 @@ export const InputForm: React.FC<InputFormProps> = ({
 
   return (
     <form onSubmit={handleSubmit} className="mb-6">
-      <div className="flex gap-2">
+      <div className="flex flex-col gap-2 sm:flex-row">
         <input
           type="text"
           value={input}
@@ -36,7 +36,7 @@ export const InputForm: React.FC<InputFormProps> = ({
         <button
           type="submit"
           disabled={isLoading || !input.trim()}
-          className="flex items-center gap-2 rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white transition hover:bg-pink-600 disabled:bg-gray-400 dark:bg-pink-600 dark:hover:bg-pink-700"
+          className="flex items-center justify-center gap-2 rounded-lg bg-pink-500 px-6 py-3 font-semibold text-white transition hover:bg-pink-600 disabled:bg-gray-400 sm:px-6 dark:bg-pink-600 dark:hover:bg-pink-700"
         >
           <AiOutlineSearch size={20} />
           Download
